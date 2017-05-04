@@ -12,7 +12,7 @@ const parse = match => new Promise((resolve, reject) => {
 });
 
 export default source => {
-  const re = /`html\n[\s\S]*?\n`/g;
+  const re = /`html\r?\n[\s\S]*?\r?\n[\s]*?`/g;
   const matches = [];
   let found;
 
